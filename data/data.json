@@ -1,0 +1,21 @@
+{
+  "sentences": {
+    "section1": [
+      "this will go in sectio one",
+      "And this one as well",
+      "I want to be free",
+      "hieors"
+    ],
+    "section2": [
+      "add to section two"
+    ],
+    "section3": [
+      "adddd"
+    ]
+  },
+  "words": {
+    "section1": [],
+    "section2": [],
+    "section3": []
+  }
+}
