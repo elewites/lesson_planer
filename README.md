@@ -143,7 +143,7 @@ BaseDataHandler
 ## Observer Pattern
 [controller_observer](./src/controller_observer.py): This abstract class defines a flexible observer interface for monitoring changes in application components, promoting efficient communication and adaptability across various modules.
 
-In my application, I use this pattern to keep controllers informed about changes in data stored in JSON files. This is crucial when controllers like `UploadSentencesController` work with the `JsonDataHandler` to modify data. To achieve this, I've added two essential methods to `BaseDataHandler`: `add_observer` and `_notify_observers`. These methods allow me to set up observers within the `JsonDataHandler`. This way observers of `JsonDataHandler`, which are mostly other controllers, can respond to these changes and update the GUI interface accordingly. 
+In my application, I use this pattern to keep controllers informed about changes in data stored in JSON files. This is crucial when controllers like `UploadSentencesController` work with the `JsonDataHandler` to modify data. To achieve this, I've added two essential methods to `BaseDataHandler`: `add_observer` and `_notify_observers`. These methods allow me to set up observers within the `JsonDataHandler`. This way observers of `JsonDataHandler`, which are mostly other controllers, can respond to changes in stored data and update the GUI interface accordingly. 
 
 ## Unit Tests
 
