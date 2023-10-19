@@ -18,6 +18,6 @@ pip install -r "$SCRIPT_DIR/requirements.txt"
 # Run the main.py script
 python "$MAIN_PY_PATH"
 
-# Deactivate the virtual environment (optional)
-deactivate
+# Deactivate the virtual environment (optional): if want to continue working in the virtual env, dont uncomment below
+# deactivate
 
