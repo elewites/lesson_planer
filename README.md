@@ -18,8 +18,7 @@ This project was developed in response to a friend's request and offers the foll
 1. **Deletion of Sentences**: At present, the user cannot delete sentences from the databank. This feature is in my roadmap for integration.
 
 2. **Words Databank**: The user has expressed an interest in also having a databank for words. This will be integrated as well, so user has access to a databank of sentences and a databank of words.
-
-
+   
 
 ## Distribution
 
@@ -53,7 +52,7 @@ If you want to explore this repo as a "programmer" and not a "user", do the foll
 Clone first, then install dependencies.
 
 ### Option One: Run Bash Script
-- Run this bash script [run_main.sh](./run_main.sh) located in the main directory. It will automatically install dependencies and start app. 
+- Run this bash script [x_run_main.sh](./x_run_main.sh) located in the main directory. It will automatically install dependencies and start app. 
 
 ### Option Two: Install Dependencies Manually
 
@@ -77,6 +76,13 @@ To run simply execute command (from root directory):
 ```bash
 python main.py
 ```
+
+### Bash Scripts
+I have included two bash scripts in root directory. 
+1. [x_run_main.sh](./x_run_main.sh): Installs dependencies in virtual environment and starts the application.
+2. [x_distribution.sh](./x_distribution.sh): Updates the `dist` package. Script simplifies code updates and project bundling, generating an executable (.exe) file. It places everything in [main](./dist/main) folder inside `dist`. This `main` folder can then be compressed to be shared.
+
+Notice: These scripts were primarily developed and tested for Windows, although I'm aware that cross-platform compatibility is ideal. However, the generated executable [main.exe](./dist/main/main.exe) does run on various platforms.
 
 #### Important Directories
 
