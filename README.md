@@ -113,10 +113,10 @@ In this project, I adopted the Model-View-Controller (MVC) design, which was a n
 Where and how is this design structure happening in my code:
 1. **View**: [window.py](./src/window.py): This class serves as the View, responsible for assembling interface elements. Event handling is not part of its role.
 2. **Controllers**: Multiple controllers are employed to efficiently manage event handling and maintain well-organized code.
-     - [main_controller](./src/main_controller): serves as base controller and is where branch components are instantiated. This          controller "depends-on" `window.py` as it needs to access the widgets that live in `window.py`. 
-     - [upload_sentences_controller](./src/update_sentences_controller.py)
-     - [random_selection_controller](./src/random_section_controller.py)
-     - [view_user_selection_controller](./src/random_section_controller.py)
+     - [main_controller](./src/main_controller.py): serves as base controller and is where branch components are instantiated. This          controller "depends-on" `window.py` as it needs to access the widgets that live in `window.py`. 
+     - [upload_sentences_controller](./src/upload_sentences_controller.py)
+     - [random_selection_controller](./src/random_selection_controller.py)
+     - [view_user_selection_controller](./src/view_user_selection_controller).py)
      - [view_all_stored_data_controller](./src/view_all_stored_data_controller.py)
      - [print_to_word_document_controller](./src/print_to_word_document_controller.py)
 
