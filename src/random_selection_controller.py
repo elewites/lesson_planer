@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import (
 from typing import Dict, List, Callable
 
 # my modules import
-from .controller_observer import ControllerObserver
+from .controller_observer import Observer
 from .data_handlers.json_data_handler import JsonDataHandler
 from .data_handlers.user_selection_data_handler import UserSelectionDataHandler
 from .window import Window
@@ -17,7 +17,7 @@ SELECT_QUANTITY = "Select Quantity"
 NO_SENTENCES_AVAILABLE = "No Sentences Available"
 
 
-class RandomSelectionController(ControllerObserver):
+class RandomSelectionController(Observer):
     def __init__(
         self,
         json_handler: JsonDataHandler,

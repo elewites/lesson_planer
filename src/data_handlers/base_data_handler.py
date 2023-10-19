@@ -1,5 +1,5 @@
 from typing import Dict, List
-from ..controller_observer import ControllerObserver
+from ..controller_observer import Observer
 
 
 # BASE CLASS FOR data handler classess
@@ -15,7 +15,7 @@ class BaseDataHandler:
         self._observers = []
 
     # OBSERVER FUNCTIONS
-    def add_observer(self, observer: ControllerObserver) -> None:
+    def add_observer(self, observer: Observer) -> None:
         """
         Add an observer to the list of observers.
 

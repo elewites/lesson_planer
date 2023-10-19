@@ -9,7 +9,7 @@ from typing import Dict, List, Callable
 # my modules imports
 from .window import Window
 from .data_handlers.json_data_handler import JsonDataHandler
-from .controller_observer import ControllerObserver
+from .controller_observer import Observer
 
 
 class UploadSentencesController:
