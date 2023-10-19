@@ -68,7 +68,7 @@
  [],
  False,
  False,
- 1697670523,
+ 1697748425,
  [('run.exe',
    'C:\\Users\\elewi\\repos\\LessonPlanner\\myenv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
