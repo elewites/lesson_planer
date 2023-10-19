@@ -122,18 +122,18 @@ Where and how is this design structure happening in my code:
 
 This below is not the file/folder structure, it just to depict the compisition of these classes. `main_controller` has an instance of these other controllers. 
   ```
-  ├── main_controller (depends on window)
-      ├── upload_sentences_controller
-      ├── random_selection_controller
-      ├── view_user_selection_controller
-      ├── view_all_stored_data_controller
-      ├── print_to_word_document_controller
+  ├── MainController (depends on window)
+      ├── UploadSentencesController
+      ├── RandomSelectionController
+      ├── ViewUserSelectionController
+      ├── ViewAllStoredDataController
+      ├── PrintWordDocumentController
   ```
 
 3. **Data Handlers**: In adherence to the MVC pattern, these components represent the Model. They encompass all the essential business logic for data manipulation, including data retrieval, storage, in-memory operations, and access interfaces for controllers.
-      - [base_data_handler](./src/data_hanlders/base_data_handler.py): Parent class for other data handlers.
+      - [base_data_handler](./src/data_handlers/base_data_handler.py): Parent class for other data handlers.
       - [json_data_handler](./src/data_handlers/json_data_handler.py): Manages data retrieval and loading from files. Depends on [Serializer](./src/serializer.py) class
-      - [user_selection_data_handler](./src/data_hanlders/user_selection_data_handler.py): Records user-selected data for later            printing in a Word document.
+      - [user_selection_data_handler](./src/data_handlers/user_selection_data_handler.py): Records user-selected data for later            printing in a Word document.
 ```
 BaseDataHandler
 ├── JsonDataHandler (depends on Serializer class)
