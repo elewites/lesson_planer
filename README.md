@@ -61,9 +61,9 @@ To run simply execute command (from root directory):
 python main.py
 ```
 
-### Important Directories
+#### Important Directories
 
-Two directories play a pivotal role when running the project in this mode: the `data` directory and the `output` directory.
+Two directories are important when running the project in this mode: the `data` directory and the `output` directory.
 
 - **Data Directory**: This is where users can store their data, creating a databank of information.
 
