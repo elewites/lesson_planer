@@ -131,9 +131,9 @@ This below is not the file/folder structure, it just to depict the compisition o
   ```
 
 3. **Data Handlers**: In adherence to the MVC pattern, these components represent the Model. They encompass all the essential business logic for data manipulation, including data retrieval, storage, in-memory operations, and access interfaces for controllers.
-      - [base_data_handler](base_data_handler.py)
-      - [json_data_handler](json_data_handler.py)
-      - [user_selection_data_handler](user_selection_data_handler.py)
+      - [base_data_handler](./data_hanlders/base_data_handler.py)
+      - [json_data_handler](./data_handlers/json_data_handler.py)
+      - [user_selection_data_handler](./data_hanlders/user_selection_data_handler.py)
 
 ```
 BaseDataHandler
